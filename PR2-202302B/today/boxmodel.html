@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body
+       {
+        margin: 0;
+        padding: 0;
+       }
+        nav
+        {
+            display: flex;
+            justify-content: end;
+            background-color: steelblue;
+            height: 80px;
+border-bottom: 3px solid white;
+        }
+        img
+        {
+            /* position: absolute; */
+            left: 0;
+        }
+        a
+        {
+            color: aliceblue;
+            font-size: 30px;
+            text-decoration: none;
+            line-height: 60px;
+            padding: 10px;   
+        }
+        #banner
+        {
+            height: 300px;
+            position: relative;
+            background-color: blue;
+        }
+        button 
+        {
+            position: absolute;
+           top: 50%;
+            left: 45%;
+            height: 50px;
+            width: 130px;
+            background: transparent;
+         border: 4px solid white;
+         color: aliceblue;
+         cursor: pointer;
+        }
+        p
+        {
+         
+            position: absolute;
+            color: aliceblue;
+            font-size: 30px;
+            top: 30%;
+            text-align: center;
+            height: 80px;
+            width: auto;
+            background-color: rgba(0 ,0,0, 0.5);
+            
+        }
+        #gallery
+        {
+            height: 300px;
+            width: 100%;
+           display: flex;
+          background-color: black;
+
+        }
+        #gallery img
+        {
+            margin-top: 100px;
+            height: 250px;
+            width: 250px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="Nissan_logo.png" alt="" height="80px" width="80px">
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Contact us</a>
+            <a href="">Feedback</a>
+            <a href="">Gallery</a>
+        </nav>
+    </header>
+    <section id="banner"> 
+        <!-- <img src="banner.jpg" alt=""  height="600px"
+        width="100%"> -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eveniet dolor, rerum nisi culpa laboriosam veritatis ipsam aperiam nesciunt ratione.</p>
+        <button>More Details</button>
+    </section>
+    <div id="gallery" style="background-color: black;">
+    <img src="c1.jpg" alt="" >
+    <img src="c3.jpg" alt="" >
+    <img src="c3.jpg" alt="">
+    <img src="c4.jpg" alt="">
+    </div>
+</body>
+</html>

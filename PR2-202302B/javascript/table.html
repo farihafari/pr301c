@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        width: 300px;
+    }
+   
+</style>
+<body>
+    <label for="">name</label>
+    <input type="text" id="nam"> <br><br>
+    <label for="">email</label>
+    <input type="email" id="email"> <br><br>
+    <label for="">qaulification</label>
+    <input type="text" id="qaul"> <br><br>
+    <input type="submit" onclick="user_info()">
+    <!-- <p id="p"></p> -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>qauification</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr>
+                <td class="a"></td>
+                <td class="a"></td>
+                <td class="a"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+function user_info(){
+    // let unam=document.getElementById("nam").value;
+    // let uemail=document.getElementById("email").value;
+    // let uqaul=document.getElementById("qaul").value;
+    // let tb = document.getElementById("tb");
+    // let n = document.getElementById("n");
+    // let e = document.getElementById("e");
+    // let q = document.getElementById("q");
+    // para.innerHTML="hello "+unam+" your email is "+uemail+" and your qaulification is "+uqaul;
+    // para.style.backgroundColor="blue";
+    // para.style.color="white";
+    let input = document.getElementsByTagName("input");
+    let td = document.getElementsByClassName("a");
+
+    // n.innerHTML=unam;
+    // e.innerHTML=uemail;
+    // q.innerHTML=uqaul;
+    td[0].innerHTML=input[0].value;
+    td[1].innerHTML=input[1].value;
+    td[2].innerHTML=input[2].value;
+} 
+
+</script>
+    
+</body>
+</html>

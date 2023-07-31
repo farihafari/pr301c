@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-                                                                                                                                                                                                 8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user_inp = prompt("enter your name");
+        let user_ql = prompt("enter your qaulification");
+        let user_ex = prompt("enter your job experience");
+       
+        if(user_inp =="" && user_ex ==""&& user_ql==""){
+                    alert("all fields is required to fill")      
+                   }
+             else if(!user_inp){
+            alert("name field is required to fill");
+ 
+                }
+            else if(!user_ql){
+            alert("qulification field is required to fill")
+
+                   }
+                   else if(!user_ex){
+                    alert("experince field is required to fill");
+
+
+                   }
+                  
+                   else if(user_inp&& user_ex && user_ql){
+                    document.write("<h1 style='background-color:brown;'>hi this is your input " +user_inp+"</h1>");
+            document.write("<h1 style='background-color:brown;'>hi this is your input " +user_ql+"</h1>");
+            document.write("<h1 style='background-color:brown;'>hi this is your input " +user_ex+"</h1>");
+                   } 
+                   
+    </script>
+</body>
+</html>

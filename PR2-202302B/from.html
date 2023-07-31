@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="home.html">
+
+        <label >name</label><br>
+        <input type="text" placeholder="ENTER NAME" required pattern="[A-Za-z\s]{3,14}"><br><br>
+        <label >email</label><br>
+        <input type="email"required  pattern="[A-Za-z,0-9]{3,}[@][a-z]{5,8}[.][a-z]{2,}"><br><br>
+        <label >password</label><br>
+        <input type="password" ><br><br>
+        <label >age</label><br>
+        <input type="number" min="18" max="30"><br><br>
+        <label >phone</label><br>
+        <input type="tel" ><br><br>
+         <label >color</label><br>
+        <input type="color"><br><br>
+
+        <label >progress</label><br>
+        <input type="range"><br><br> 
+        <label >gender</label><br>
+        <label for="">male</label>
+        <input type="radio" name="gender">
+        <label for="">female</label>
+        <input type="radio" name="gender"><br>
+        <label for="">skills</label><br>
+        <label for="">html</label>
+        <input type="checkbox" checked>
+        <label for="">css</label>
+        <input type="checkbox">
+        <label for="">javascript</label>
+        <input type="checkbox">
+        <label for="">php</label>
+        <input type="checkbox"><br><br>
+       <label for="">image</label>
+        <input type="file">
+        <label for="">city</label>
+      <select name="" id="">
+        <option value="">select anyone</option>
+        <option value="kh">karachi</option>
+<option value="">lahore</option>
+<option value="">islamabad</option>
+      </select><br><br>
+      <label for="">countries</label>
+      <input  list="lisst" >
+      <datalist id="lisst">
+ <option value="pakistan">pakistan</option>
+ <option value="turkey">turkey</option>
+ <option value="iran">iran</option>
+      </datalist><br><br>
+    <label for="">address</label><br><br>
+    <textarea name="" id="" cols="60" rows="05"></textarea>
+    <input type="submit" value="click">
+    </form>
+</body>
+</html>

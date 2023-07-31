@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <input type="text" name="" id="">
+    <input type="email" name="" id="">
+    <input type="tel" name="" id="">
+    <input type="submit" onclick="d()">
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="a"></td>
+                <td class="a"></td>
+                <td class="a"></td>
+            </tr>
+        </tbody>
+    </table>
+<script>
+    function d(){
+        let x = document.getElementsByTagName("input");
+        let y = document.querySelectorAll(".a")
+        y[0].innerHTML = x[0].value;
+        y[1].innerHTML = x[1].value;
+        y[2].innerHTML = x[2].value;
+    }
+</script>
+</body>
+</html>

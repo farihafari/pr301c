@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border-collapse: collapse;
+        width: 600px;
+        text-align: center;
+    }
+    p:first-child{
+        color: blueviolet;
+    }
+    p:last-child{
+        background-color: aqua;
+    }
+    p:nth-child(3){
+        background-color: brown;
+        color: white;
+    }
+    tbody> tr:nth-child(even){
+        background-color: rgb(75, 73, 73);
+    }
+    tbody> tr:nth-child(odd){
+        background-color: rgb(174, 172, 172);
+    }
+    tbody>tr:hover{
+        background-color: rgb(98, 110, 134);
+        color: rgb(35, 53, 2);
+    }
+</style>
+<body>
+    <h1>table session</h1>
+    <table border="1">
+      
+        <caption>students details</caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th colspan="2">phone</th>
+                <th>course</th>
+                <th>remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ali</td>
+                <td>ali@gmail.com</td>
+                <td>345642</td>
+                <td>446545564</td>
+                <td>cpism</td>
+                <td>excellent</td>
+            </tr>
+            <tr>
+                <td>aliyan</td>
+                <td>aliyan@gmail.com</td>
+                <td>6517823158</td>
+                <td>446545564</td>
+                <td>dism</td>
+                <td>good</td>
+            </tr>
+            <tr>
+                <td>hafsa</td>
+                <td>hafsa@gmail.com</td>
+                <td>7190244789</td>
+                <td>446545564</td>
+                <td>cpism</td>
+                <td>excellent</td>
+            </tr>
+            <tr>
+                <td>aliyan</td>
+                <td>aliyan@gmail.com</td>
+                <td>6517823158</td>
+                <td>446545564</td>
+                <td>dism</td>
+                <td>good</td>
+            </tr>
+            <tr>
+                <td>ali</td>
+                <td>ali@gmail.com</td>
+                <td>345642</td>
+                <td>446545564</td>
+                <td>cpism</td>
+                <td>excellent</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">courses</th>
+                <th>module 1</th>
+                <th>module 2</th>
+                <th>module 3</th>
+                <th>module 4</th>
+                <th>module 5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">cpism</td>
+                <td>msoffice</td>
+            </tr>
+            <tr>  <td>web designing</td></tr>
+            <tr>  <td>bootsrap & jquery</td></tr>
+            <tr>  <td>ui & ux</td></tr>
+            <tr>  <td>seo</td></tr>
+        </tbody>
+    </table>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, soluta.</p>
+        <p>Dicta nihil facere officia perferendis doloremque, rem corporis sequi sit!</p>
+        <p>Fugiat ad voluptas asperiores quos totam dignissimos facere numquam obcaecati.</p>
+        <p>Unde nemo amet minima sit iusto itaque distinctio neque in?</p>
+        <p>Delectus recusandae iusto blanditiis dolore inventore sit nihil totam possimus.</p>
+    </div>
+</body>
+</html>
