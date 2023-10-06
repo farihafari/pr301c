@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptech>
+<center id="sfc">
+<department>
+    <name>student affairs</name>
+    <employes>20</employes>
+    <timings>9 to 9</timings>
+</department>
+<department>
+    <name>admission</name>
+    <employes>5</employes>
+    <timings>9 to 9</timings>
+</department>
+<department>
+    <name>faculty</name>
+    <employes>30</employes>
+    <timings>9 to 9</timings>
+</department>
+</center>
+<center id="msg">
+    <department>
+        <name>student affairs</name>
+        <employes>20</employes>
+        <timings>9 to 9</timings>
+    </department>
+    <department>
+        <name>admission</name>
+        <employes>5</employes>
+        <timings>9 to 9</timings>
+    </department>
+    <department>
+        <name>faculty</name>
+        <employes>30</employes>
+        <timings>9 to 9</timings>
+    </department>
+</center>
+<center id="nm1">
+    <department>
+        <name>student affairs</name>
+        <employes>20</employes>
+        <timings>9 to 9</timings>
+    </department>
+    <department>
+        <name>admission</name>
+        <employes>5</employes>
+        <timings>9 to 9</timings>
+    </department>
+    <department>
+        <name>faculty</name>
+        <employes>30</employes>
+        <timings>9 to 9</timings>
+    </department>
+</center>
+</aptech>

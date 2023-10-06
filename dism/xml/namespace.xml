@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sfc:aptech  xmlns:sfc="https://www.fake.com">
+    <recovery:department  xmlns:recovery="https://www.fake.com">
+        <sfc:name>
+
+        </sfc:name>
+        <employee></employee>
+        <total_pay_amount>
+
+        </total_pay_amount>
+    </recovery:department>
+    <department>
+        <sfc:name>
+
+        </sfc:name>
+        <employee></employee>
+        <total_pay_amount>
+            
+        </total_pay_amount>
+    </department>
+    <department>
+        <name>
+
+        </name>
+        <employee></employee>
+        <total_pay_amount>
+            
+        </total_pay_amount>
+    </department>
+</sfc:aptech>

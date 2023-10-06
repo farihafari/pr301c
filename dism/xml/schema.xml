@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<abc_company>
+    <employee>
+            <id>465</id>
+            <name>Faraz munawar</name>
+            <age>19</age>
+            <designation></designation>
+            <salary>30000</salary>
+            <city>karachi</city>
+    </employee>
+    <employee>
+        <id>465</id>
+        <name>Faraz munawar</name>
+        <age>19</age>
+        <designation></designation>
+        <salary>30000</salary>
+        <city>karachi</city>
+</employee>
+<employee>
+    <id>465</id>
+    <name>Faraz munawar</name>
+    <age>19</age>
+    <designation></designation>
+    <salary>30000</salary>
+    <city>karachi</city>
+</employee>
+   
+</abc_company>

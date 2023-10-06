@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+     <h1 class="text-center text-info mt-3">log in</h1>
+          <form action="">
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control" id="uem" autocomplete>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" id="ups" autocomplete>
+            </div>
+           
+              
+            <button type="button" class="btn btn-primary mt-3" id="btn">Submit</button>
+        </form>
+    </div>
+    <script>
+        
+  
+
+    document.querySelector("#btn").addEventListener("click",function(){
+
+
+        
+        let ue = document.querySelector("#uem");
+        let up = document.querySelector("#ups");
+        let userDetail = JSON.parse(localStorage.getItem("userDetail"));
+        let matchdata = false;
+    
+        // console.log(userDetail)
+
+        // $.each(userDetail,function(index,value){
+        //     if(ue == value.email && up == value.password){
+        //         alert("login successfully");
+        //         location.assign("admin.html");
+           
+        //     }else{
+                
+        //         alert("invalid data");
+               
+                
+        //     }
+           
+           
+        // })
+        for(let data  of userDetail ){
+        //    console.log(userDetail[data].email)
+            // alert(userDetail[data].password)
+            if( ue.value == data.email && up.value == data.password){
+                //  // // alert("login successfully");
+                // // // location.assign("admin.html");
+                alert("logged in");
+                window.location.href="admin.html?name="+data.name;
+                matchdata=true;
+                // // console.log(true)
+                // //  break;
+                // console.log(data.email+ data.password)
+                break;
+               
+            }
+            
+        }
+        if(!matchdata){
+            alert("data does not exits");
+            location.assign("login.html");
+        }
+  
+         
+       })
+
+    </script>
+</body>
+</html>

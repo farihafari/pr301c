@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "external.dtd" [
+   
+    <!ENTITY course1  "cpism">
+    <!ENTITY course02  "dism">
+]>
+<students>
+    <student semester="CPISM">
+        <id>101</id>
+        <name>asad</name>
+        <email>asad@gmail.com</email>
+        <phone>3463445</phone>
+        <course>&course1;</course>
+            </student>
+            <student>
+                <id>102</id>
+                <name>ali</name>
+                <email>ali@gmail.com</email>
+                <course>&course2;</course>
+                    </student>
+</students>

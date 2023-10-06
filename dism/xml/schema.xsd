@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="abc_company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="employee">
+                    <xs:complexType>
+                        <xs:sequence>
+                <xs:element name="id" type="xs:nonNegativeInteger" />
+               
+              
+              
+                
+                <xs:element name="name">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[A-Za-z\s]{3,20}"></xs:pattern>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="age"  >
+                    <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                            <xs:minExclusive value="18
+                            "></xs:minExclusive>
+                            <xs:maxExclusive value="30"></xs:maxExclusive>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element> 
+                  <xs:element name="designation" type="xs:string" />
+                <xs:element name="salary" type="xs:positiveInteger" />
+                <xs:element name="city">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="karachi"></xs:enumeration>
+                            <xs:enumeration value="lahore"></xs:enumeration>
+                            <xs:enumeration value="faislabad"></xs:enumeration>
+
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+            </xs:complexType>
+            </xs:element>
+            
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

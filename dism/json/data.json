@@ -1,0 +1,111 @@
+[
+    {
+"id":1,
+"name":"infinix",
+"model":"node 12",
+"storage":"128GB",
+"camera":"45MP",
+"price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",
+"img":"images/i1.jpg"
+    },
+    {
+        "id":2,
+        "name":"infinix",
+        "model":"node 11",
+        "storage":"128GB",
+        "camera":"45MP",
+        "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",        "img":"images/r1.jpg"
+            },
+            {
+  "id":3,
+ "name":"techno",
+ "model":"camon",
+"storage":"128GB",
+"camera":"45MP",
+                "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                "img":"images/s1.jpg"
+                    },
+                    {
+                        "id":4,
+                        "name":"infinix",
+                        "model":"hot 10",
+                        "storage":"128GB",
+                        "camera":"45MP",
+                        "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                        "img":"images/s2.jpg"
+                            },
+                            {
+                                "id":5,
+                                "name":"iphone",
+                                "model":"11 pro",
+                                "storage":"128GB",
+                                "camera":"45MP",
+                                "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                                "img":"images/s3.jpg"
+                                    },
+                                    {
+                                        "id":6,
+                                        "name":"techno",
+                                        "model":"camon 18 t",
+                                        "storage":"128GB",
+                                        "camera":"45MP",
+                                        "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                                        "img":"images/v1.jpg"
+                                            },
+                                            {
+                                                "id":7,
+                                                "name":"iphone",
+                                                "model":"12 PRO",
+                                                "storage":"128 GB",
+                                                "camera":"45MP",
+                                                "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                                                "img":"images/v2.jpg"
+                                                    },
+                                                    {
+                                                        "id":8,
+                                                        "name":"techno",
+                                                        "model":"camon 19 t",
+                                                        "storage":"128 GB",
+                                                        "camera":"45MP",
+                                                        "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                                                        "img":"images/v2.jpg"
+                                                            },
+                                                            {
+                                                                "id":9,
+                                                                "name":"infinix",
+                                                                "model":"HOT 11",
+                                                                "storage":"128 GB",
+                                                                "camera":"45MP",
+                                                                "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                                                                "img":"images/v2.jpg"
+                                                                    },
+                                                                    {
+                                                                        "id":10,
+                                                                        "name":"techno",
+                                                                        "model":"SPARK",
+                                                                        "storage":"128 GB",
+                                                                        "camera":"45MP",
+                                                                        "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                                                                        "img":"images/v2.jpg"
+                                                                            },
+                                                                            {
+                                                                                "id":11,
+                                                                                "name":"infinix",
+                                                                                "model":"ZREOX",
+                                                                                "storage":"128 GB",
+                                                                                "camera":"45MP",
+                                                                                "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                                                                                "img":"images/v2.jpg"
+                                                                                    },
+                                                                                    {
+                                                                                        "id":12,
+                                                                                        "name":"techno",
+                                                                                        "model":"SPARK 9C" ,
+                                                                                        "storage":"128 GB",
+                                                                                        "camera":"45MP",
+                                                                                        "price":45000,
+"des":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rhoncus sollicitudin faucibus. ",                                                                                        "img":"images/v2.jpg"
+                                                                                            }
+]

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <title>json index page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-lg-3">
+         <input type="search" name="" id="inp" class="form-control">
+        </div>
+      </div>
+        <div class="row" id="demo">
+          
+        </div>
+        <div class="modl">
+          <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+        </div>
+    </div>
+
+    <script>
+$(document).ready(function(){
+    $.ajax({
+        url:"data.json",
+        type:"get",
+        success:function(data){
+            // console.log(data)
+            let x="";
+            $.each(data,function(index,object){
+x+=`
+<div class="col-lg-3 mt-4">
+                <div class="card" >
+                  <img src="${object.img}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">${object.name}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">${object.price}</h6>
+                    <p class="card-text">${object.storage}</p>
+                    <p class="card-text">${object.camera}</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${object.id}">
+ details
+</button>
+                  </div>
+                </div>
+            </div>
+
+`
+            })
+            $("#demo").html(x);
+
+            $("#inp").on("input",function(){
+              let y="";
+              let inputdata = $(this).val().toLowerCase();
+              let filterdata = data.filter(function(products){
+              return products.name.toLowerCase().indexOf(inputdata)>-1;
+            })
+            // console.log(filterdata);
+
+ $.each(filterdata,function(key,elemnt){
+y+=
+`
+<div class="col-lg-3 mt-4">
+                <div class="card" >
+                  <img src="${elemnt.img}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">${elemnt.name}</h5>
+                    <h5 class="card-title">${elemnt.model}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted ">${elemnt.price}</h6>
+                    <p class="card-text">${elemnt.storage}</p>
+                    <p class="card-text">${elemnt.camera}</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${elemnt.id}">
+  details
+</button>
+                  </div>
+                </div>
+            </div>
+`
+ })
+ $("#demo").html(y);
+
+            })
+
+let mod ="";
+$.each(data,function( ind, value){
+  mod+=`
+<div class="modal fade" id="exampleModal${value.id}" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">${value.name}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <img src="${value.img}" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <p class="text-justify">${value.des}</p>
+            <p>${value.model}</p>
+       <p>${value.price}</p>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"><a class="text-light" href="detail.html?id=${value.id}">
+          add to cart
+          </a>
+          </button>
+      </div>
+    </div>
+  </div>
+</div>
+`
+
+})
+$(".modl").html(mod);
+
+        }
+    })
+})
+    </script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
